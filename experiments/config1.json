@@ -1,0 +1,14 @@
+{
+  "env_name": "CartPole-v1",
+  "population_size": 40,
+  "generations": 60,
+  "episodes_per_eval": 3,
+  "crossover_rate": 0.9,
+  "mutation_rate": 0.05,
+  "mutation_sigma": 0.10,
+  "tournament_k": 3,
+  "elitism": 2,
+  "k_pos": 0.4,
+  "k_ang": 0.9,
+  "verbose": true
+}
