@@ -21,7 +21,8 @@ def evaluar_fitness(individuo: Individuo, env_name: str = "CartPole-v1", episodi
             obs, r, done, trunc, _ = env.step(accion)
             x, x_dot, theta, theta_dot = obs
             penal = k_pos * abs(x) + k_ang * abs(theta)
-            ep += (r - penal)
+            ep += (r - penal) #para penalizar
+            #ep += r # si no quiero penalizar 
             if trunc:  # por si el entorno trunca al alcanzar el límite
                 break
         total += ep

@@ -1,0 +1,22 @@
+{
+  "env_name": "CartPole-v1",
+  "population_size": 20,
+  "generations": 20,
+  "episodes_per_eval": 2,
+  "crossover_rate": 0.9,
+  "mutation_rate": 0.05,
+  "mutation_sigma": 0.1,
+  "tournament_k": 3,
+  "elitism": 3,
+
+  "k_pos": 0.0,  
+  "k_ang": 0.0,
+
+  "render_env": true,
+  "render_persistent": true,
+  "render_every": 5,
+  "render_max_steps": 400,
+
+  "checkpoint_every": 5,
+  "verbose": true
+}
