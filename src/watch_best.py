@@ -19,7 +19,7 @@ def ver_jugar(path_pesos: str, env_name: str = "CartPole-v1"):
     pasos = 0
 
     while not (done or trunc):
-        accion = ind.decidir(obs)            # usar política aprendida
+        accion = ind.decidir(obs)            # Usar política aprendida
         obs, recompensa, done, trunc, _ = env.step(accion)
         pasos += 1
 
